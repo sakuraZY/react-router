@@ -744,6 +744,6 @@ export function resolveLocation(to, fromPathname = '/') {
  */
 export function generatePath(pathname, params = {}) {
   return pathname
-    .replace(/:(\w+)/g, (_, key) => params[key] == undefined ? params[key] : `:${key}`)
-    .replace(/\*$/, splat => params[splat] == undefined ? params[splat] : splat);
+    .replace(/:(\w+)/g, (_, key) => params[key] != undefined ? params[key] : `:${key}`)
+    .replace(/\*$/, splat => params[splat] != undefined ? params[splat] : splat);
 }
