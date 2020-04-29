@@ -1,12 +1,13 @@
 {
   "name": "react-router-dom",
   "version": "6.0.0-alpha.3",
-  "description": "Declarative routing for React web applications",
   "author": "React Training <hello@reacttraining.com>",
+  "description": "Declarative routing for React web applications",
   "repository": "ReactTraining/react-router",
   "license": "MIT",
   "main": "main.js",
-  "module": "react-router-dom.js",
+  "module": "index.js",
+  "types": "index.d.ts",
   "unpkg": "umd/react-router-dom.production.min.js",
   "dependencies": {
     "history": "5.0.0-beta.4",
